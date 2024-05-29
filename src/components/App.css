@@ -1,0 +1,161 @@
+/* *{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+body{
+    background-color: rgb(10, 10, 10);
+}
+
+div#application{
+    display: inline-block;
+    width: 75vw;
+    margin-left: 5%;
+    min-height: 30vh;
+    padding: 2rem;
+    border-radius: 20px;
+}
+#todo{
+    color: rgb(48, 10, 125);
+    width: max-content;
+    margin:1% auto;
+    font-size: 180%;
+    background: linear-gradient(to right, rgb(58, 9, 138), rgb(162, 131, 219));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+form{
+    width: max-content;
+}
+input{
+    max-width: 68%;
+    height: 3rem;
+    font-size: 130%;
+    padding-left: 10%;
+    outline: none;
+    border-radius: 30px;
+    border: 0;
+    
+}
+button{
+    height:3rem;
+    width:20%;
+    font-size: 200%;
+    background-color: rgb(198, 106, 36);
+    outline: none;
+    border: none;
+    border-radius:5rem;
+    padding-bottom: 1%;
+    margin-left: 2%;
+
+
+}
+div#content{
+    margin-top: 8%;
+}
+li{
+    margin-top: 5%;
+    color: rgb(198, 191, 191);
+    font-size: 170%;
+    letter-spacing: 2px;
+}
+div#l{
+    border: 1px solid rgb(237, 224, 224);
+    border-radius:25px;
+    margin: 10% auto;
+    padding:2%;
+    padding-bottom: 5%;
+    background-color:rgb(177, 96, 33);
+    padding-left: 20%;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(220deg,rgb(9, 22, 58),rgb(36, 6, 60));
+    background-position:center ;
+    background-attachment: fixed;
+}
+#application{
+    /* background-color: rgb(95, 61, 149); */
+    width: 25vw;
+    padding: 3.5rem;
+    padding-top: 4%;
+    margin:10rem auto;
+    border-radius: 40px;
+    background-color: white;
+}
+h1{
+    font-size: 3.5rem;
+    width: max-content;
+    background: linear-gradient(to right, rgb(238, 6, 227),rgb(55, 110, 220));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 5% auto;
+}
+input{
+    font-size: 150%;
+    padding: 2%;
+    padding-left: 5%;
+    width: 74%;
+    outline:none;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+button{
+    width: 14%;
+    height:2.6rem;
+    border-radius: 50%;
+    padding: 1%;
+    outline: none;
+    font-size: 150%;
+    margin-left: 4%;
+    border: 1px;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    max-width: 14%;
+}
+
+div#l{
+    margin: 6% 10% 0% 10%;
+    word-wrap: break-word; /* Allows breaking words to fit within the container */
+    white-space: normal;  
+}
+li{
+    font-size: 180%;
+    color: rgb(53, 51, 51);
+}
+@media screen and (max-width:480px) {
+    body{
+        background-image: linear-gradient(140deg,rgb(65, 45, 124),rgb(17, 2, 30));
+    }
+        #application{
+            width: 60%;
+            padding: 2rem;
+            padding-top: 4%;
+            margin-top:50%;
+            min-height: 25vh;
+        }
+        h1{
+            font-size: 3.4rem;
+            padding: 7%;
+            padding-bottom: 2%;
+        }
+        input{
+            width: 45vw;
+            margin-right: 3%;
+        }button{
+            margin: 0;
+            width:15vw;
+            padding: 1.5%;
+            height: max-content;
+        }
+        div#l{
+            margin-left: 15%;
+        }
+}   

@@ -1,0 +1,48 @@
+import React, { useState } from "react";
+import List from "./List"; // Assuming this is the correct path to your List component
+import "./App.css";
+
+function App() {
+  const [text, setText] = useState("");
+  const [items, setItems] = useState([]);
+
+  function handleChange(event) {
+    const changed = event.target.value;
+    setText(changed);
+  }
+
+  function addItem(event) {
+    event.preventDefault();
+    if (text) {
+      setItems((prevItems) => [...prevItems, text]);
+      setText("");
+    }
+  }
+
+  function strike(id) {
+    setItems((prevItems) => {
+      return prevItems.filter((_, index) => index !== id);
+    });
+  }
+
+  return (
+    <div id="application">
+      <div id="todo"><h1>To-Do!!</h1></div>
+      <div>
+        <form onSubmit={addItem}>
+          <input onChange={handleChange} type="text" value={text} />
+          <button type="submit">+</button>
+        </form>
+      </div>
+      <div id="content">
+        <ul>
+          {items.map((el, index) => (
+            <List key={index} id={index} text={el} strike={strike} />
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default App;
