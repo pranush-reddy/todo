@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import List from "./List"; // Assuming this is the correct path to your List component
+import List from "./List";
 import "./App.css";
 
 function App() {
@@ -14,15 +14,17 @@ function App() {
   function addItem(event) {
     event.preventDefault();
     if (text) {
-      setItems((prevItems) => [...prevItems, text]);
+      setItems((prevItems) => [...prevItems, { text, completed: false }]);
       setText("");
     }
   }
 
   function strike(id) {
-    setItems((prevItems) => {
-      return prevItems.filter((_, index) => index !== id);
-    });
+    setItems((prevItems) =>
+      prevItems.map((item, index) =>
+        index === id ? { ...item, completed: !item.completed } : item
+      )
+    );
   }
 
   return (
@@ -37,7 +39,7 @@ function App() {
       <div id="content">
         <ul>
           {items.map((el, index) => (
-            <List key={index} id={index} text={el} strike={strike} />
+            <List key={index} id={index} text={el.text} completed={el.completed} strike={strike} />
           ))}
         </ul>
       </div>
