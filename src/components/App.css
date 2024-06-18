@@ -107,7 +107,7 @@ div#l {
         }
         input{
             width: 45vw;
-            font-size: 120%;
+            font-size: 150%;
         }button{
             margin: 0;
             width:15vw;
@@ -117,14 +117,21 @@ div#l {
         }
         button[type='submit']{
             width: min-content;
+            margin-top: auto;
         }
         div#l{
            justify-content: center;
         }
+        input[type='checkbox'] {
+            transform: scale(1);
+            padding: 0px;
+            margin: 0;
+            width: max-content;
+          }
         p{
-            font-size: 190%;
+            font-size: 180%;
         }
-        li{
-            font-size: 150%;
-        }
+        #del svg{
+            transform: scale(1.1);
+          }
 }   
