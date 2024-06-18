@@ -136,6 +136,7 @@ div#l {
     font-size: 200%;
     color: rgb(53, 51, 51);
     text-decoration-color: rgb(62, 15, 171);
+<<<<<<< HEAD
     word-break: break-all;
     padding: 0% 10%;
     flex: 1;
@@ -163,9 +164,15 @@ div#l {
 @media screen and (max-width:490px) {
     body{
         background-image: linear-gradient(140deg,rgb(28, 13, 72),rgb(47, 7, 83));
+=======
+}
+@media screen and (max-width:480px) {
+    body{
+         background-image: linear-gradient(140deg,rgb(28, 13, 72),rgb(47, 7, 83));
+>>>>>>> 4c986bc07b96da5b56735f7b439b9d7060fa08b3
     }
         #application{
-            width: 60%;
+            width: 61%;
             padding: 2rem;
             padding-top: 4%;
             margin-top:50%;
@@ -177,8 +184,12 @@ div#l {
             padding-bottom: 2%;
         }
         input{
+<<<<<<< HEAD
             width: 45vw;
             font-size: 120%;
+=======
+            width: 44vw;
+>>>>>>> 4c986bc07b96da5b56735f7b439b9d7060fa08b3
         }button{
             margin: 0;
             width:15vw;
@@ -194,5 +205,8 @@ div#l {
         }
         p{
             font-size: 190%;
+        }
+        li{
+            font-size: 150%;
         }
 }   
