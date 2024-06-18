@@ -1,10 +1,13 @@
 import React from "react";
-
-function List(props) {
+import DeleteIcon from '@mui/icons-material/Delete';
+function List({ id, text , onDelete}) {
   return (
-    <div id="l" onClick={() => props.strike(props.id)}>
-      <li>{props.text}</li>
-    </div>
+    <div id="l" >
+      <input type="checkbox"></input>
+    <p id={`item-${id}`}>{text}</p>
+    <button id="del" onClick={() => onDelete(id)}>
+      <DeleteIcon/>
+      </button></div>
   );
 }
 
