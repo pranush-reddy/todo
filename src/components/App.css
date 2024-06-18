@@ -65,7 +65,7 @@ div#l {
     font-size: 200%;
     color: rgb(53, 51, 51);
     text-decoration-color: rgb(62, 15, 171);
-    word-break: break-all;
+    word-break:break-word;
     padding: 0% 10%;
     flex: 1;
   }
