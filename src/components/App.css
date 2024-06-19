@@ -117,8 +117,8 @@ div#l {
             padding-bottom: 2%;
         }
         input{
-            width: 50vw;
-            font-size: 120%;
+            width: 74%;
+            font-size: 130%;
             margin: 0% 1%;
         }
         /* }button{
@@ -142,7 +142,7 @@ div#l {
             width: max-content;
           }
         p{
-            font-size: 130%;
+            font-size: 135%;
         }
         #del svg{
             transform: scale(0.8);
