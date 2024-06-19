@@ -99,7 +99,7 @@ div#l {
         background-image: linear-gradient(140deg,rgb(28, 13, 72),rgb(47, 7, 83));
     }
         #application{
-            width: 61%;
+            width: 65%;
             padding: 2rem;
             padding-top: 4%;
             margin-top:50%;
@@ -117,8 +117,8 @@ div#l {
             padding-bottom: 2%;
         }
         input{
-            width: 45vw;
-            font-size: 100%;
+            width: 50vw;
+            font-size: 120%;
             margin: 0% 1%;
         }
         /* }button{
@@ -130,7 +130,7 @@ div#l {
         } */
         button[type='submit']{
             width: min-content;
-            scale: 0.8;
+            scale: 0.9;
         }
         div#l{
            justify-content: center;
