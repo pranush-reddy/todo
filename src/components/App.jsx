@@ -34,6 +34,7 @@ function App() {
 
   function deleteItem(id) {
     const updatedItems = items.filter((item, index) => index !== id);
+    localStorage.setItem("todos",updatedItems);
     setItems(updatedItems);
   }
   const [daysDifference, setDaysDifference] = useState(null);
